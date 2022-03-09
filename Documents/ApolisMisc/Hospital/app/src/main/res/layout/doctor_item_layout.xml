@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/recycler_view_item_vertical_margin_small"
+    android:layout_gravity="center_horizontal"
+    android:padding="@dimen/common_padding"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/common_padding">
+
+
+    <TextView
+        android:id="@+id/tv_doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_doctor_specialty"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/text_view_common_style"/>
+
+    <TextView
+        android:id="@+id/tv_doctor_specialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Specialty"
+        app:layout_constraintEnd_toStartOf="@+id/tv_doctor_degree"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_doctor_name"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/text_view_common_style"/>
+
+    <TextView
+        android:id="@+id/tv_doctor_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Degree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_doctor_specialty"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/text_view_common_style"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

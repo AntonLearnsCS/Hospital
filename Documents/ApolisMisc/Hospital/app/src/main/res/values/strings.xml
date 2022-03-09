@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Hospital</string>
+    <string name="list_of_patients">List of Patients</string>
+    <string name="list_of_doctors">List Of Doctors</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="add_doctor">Add doctor</string>
+    <string name="add_patient">Add Patient</string>
+    <string name="view_appointments">View Appointments</string>
+    <string name="list_of_appointments">List Of Appointments</string>
+</resources>

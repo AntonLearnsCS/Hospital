@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cacaca"
+    tools:context=".activities.ListOfDoctorsActivity">
+    <TextView
+        android:id="@+id/tv_doctor_list_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:text="@string/list_of_doctors"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/doctor_item_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_doctor_list_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
